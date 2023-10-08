@@ -34,6 +34,12 @@ li {
   font-size: large;
 }
 
+.nav-links li {
+    color: white;
+    font-size: large;
+  }
+
+
 /* style logo */
 
 .logo {
@@ -47,7 +53,12 @@ li {
   align-items: center;
   gap: 1em;
   font-size: 20px;
+  color: white;
 }
+
+.menu a{
+    color: white;
+  }
 
 .menu a:hover {
   color: #ff8552;
@@ -71,7 +82,7 @@ input[type="checkbox"] {
 }
 
 /* responsive media query */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .menu {
     display: none;
     position: absolute;
@@ -79,7 +90,7 @@ input[type="checkbox"] {
     right: 0;
     left: 0;
     text-align: center;
-    margin-top: 24px;
+    margin-top: 240px;
     padding: 16px 0;
   }
 

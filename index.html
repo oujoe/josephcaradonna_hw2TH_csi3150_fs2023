@@ -2,14 +2,14 @@
 <!--This is a comment in HTML-->
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joseph Caradonna</title>
     <!--downloaded favicon from https://icons8.com/icons/set/favicon-->
-    <link rel="icon" type="image/x-icon" href="./img/icons8-favicon-64.png" />
+    <link rel="icon" type="image/x-icon" href="./img/icons8-favicon-64.png">
     <!--CSS libraries / files-->
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/responsiveNavbarstyle.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsiveNavbarstyle.css">
     <!--JS libraries / files-->
   </head>
   <body>
@@ -19,10 +19,13 @@
         <div class="logo">
           <h1>Joe's Portfolio Site</h1>
         </div>
-        <ul class="nav-links">
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <input type="checkbox" id="checkbox_toggle">
+          <div class="nav-links">
+        <ul>
           <!--Hamburger menu icon and checkbox-->
-          <input type="checkbox" id="checkbox_toggle" />
-          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        </div>
+          
           <div class="menu">
             <li><a href="/index.html" class="navOption">Home</a></li>
             <li>
@@ -32,6 +35,8 @@
               <a href="./html/my_fun_facts.html" class="navOption">Fun Facts</a>
             </li>
           </div>
+        </div>
+        
         </ul>
       </nav>
 
