@@ -2,40 +2,65 @@
 <!--This is a comment in HTML-->
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joseph Caradonna</title>
     <!--downloaded favicon from https://icons8.com/icons/set/favicon-->
-    <link rel="icon" type="image/x-icon" href="./img/icons8-favicon-64.png">
+    <link rel="icon" type="image/x-icon" href="./img/icons8-favicon-64.png" />
     <!--CSS libraries / files-->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/responsiveNavbarstyle.css" />
     <!--JS libraries / files-->
   </head>
   <body>
     <header>
-      <h1>Welcome to Joseph Caradonna's portfolio site!</h1>
-      <nav>
-        <a href="/index.html" class="navOption">Home</a>
-        <a href="./html/my_resume.html" class="navOption">Resume</a>
-        <a href="./html/my_fun_facts.html" class="navOption">Fun Facts</a>
+      <nav class="navbar">
+        <!--Logo-->
+        <div class="logo">
+          <h1>Joe's Portfolio Site</h1>
+        </div>
+        <ul class="nav-links">
+          <!--Hamburger menu icon and checkbox-->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="menu">
+            <li><a href="/index.html" class="navOption">Home</a></li>
+            <li>
+              <a href="./html/my_resume.html" class="navOption">Resume</a>
+            </li>
+            <li>
+              <a href="./html/my_fun_facts.html" class="navOption">Fun Facts</a>
+            </li>
+          </div>
+        </ul>
       </nav>
-      <hr>
+
+      <hr />
     </header>
 
-    <!--Added image that was downloaded off of instagram-->
-    <div id="photoandquote">
-      <img
-        src="./img/joepic.jpg"
-        alt="This is a picture of Joseph Caradonna"
-        width="340"
-        height="400"
-      >
-      <blockquote cite="https://www.quotes.net/mquote/129399" id="quote">
-        "If you ain't first, you're last" - Reese Bobby
-      </blockquote>
+    <div class="row">
+      <div class="column">
+        <h1 class="intro">Welcome to Joseph Caradonna's Portfolio!</h1>
+        <blockquote cite="https://www.quotes.net/mquote/129399" id="quote">
+          "If you ain't first, you're last" - Reese Bobby
+        </blockquote>
+        <button type="button">
+          <a href="./html/my_resume.html" class="link">Check out my resume!</a>
+        </button>
+      </div>
+      <div class="column">
+        <!--Added image that was downloaded off of instagram-->
+        <img
+          src="./img/joepic.jpg"
+          alt="This is a picture of Joseph Caradonna"
+          width="340"
+          height="400"
+        />
+      </div>
     </div>
 
     <!--Main Body-->
-    <div id="content-paragraphs">
+    <div class="content-paragraphs">
       <p>
         My name is Joseph Caradonna and I am a student at Oakland University. I
         am studying Information Technology and will be graduating in December
@@ -47,8 +72,8 @@
         Insider/Delivery Driver where I learned customer service skills. My
         future plans are to open my own IT support company for clients across
         Michigan. To learn more about my professional experience see my
-        <a href="./html/my_resume.html" class="link">resume</a> and to learn more
-        about some of my favorite things go to
+        <a href="./html/my_resume.html" class="link">resume</a> and to learn
+        more about some of my favorite things go to
         <a href="./html/my_fun_facts.html" class="link">fun facts</a>.
       </p>
 
@@ -64,12 +89,12 @@
       </p>
     </div>
     <!--learned how to implement progress bar from https://www.w3schools.com/tags/tag_progress.asp-->
-    <div id="progressbar">
+    <div class="progressbar">
       <label for="graduation">Progress to degree in credits:</label>
       <progress id="graduation" value="138" max="146">98%</progress>
     </div>
 
-    <hr>
+    <hr />
 
     <!--Footer with Copyright and LinkedIN link-->
     <footer>

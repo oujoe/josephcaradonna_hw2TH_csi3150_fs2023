@@ -2,32 +2,45 @@
 <!--This is a comment in HTML-->
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joseph Caradonna</title>
     <!--downloaded favicon from https://icons8.com/icons/set/favicon-->
-    <link rel="icon" type="image/x-icon" href="./img/icons8-favicon-64.png">
+    <link rel="icon" type="image/x-icon" href="./img/icons8-favicon-64.png" />
     <!--CSS libraries / files-->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/responsiveNavbarstyle.css" />
     <!--JS libraries / files-->
   </head>
   <body>
     <header>
-
-      <br>
-
-      <nav>
-        <a href="../index.html" class="navOption">Home</a>
-        <a href="./my_resume.html" class="navOption">Resume</a>
-        <a href="./my_fun_facts.html" class="navOption">Fun Facts</a>
+      <nav class="navbar">
+        <!--Logo-->
+        <div class="logo">
+          <h1>Joseph Caradonna - Resume</h1>
+        </div>
+        <ul class="nav-links">
+          <!--Hamburger menu icon and checkbox-->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="menu">
+            <li><a href="../index.html" class="navOption">Home</a></li>
+            <li>
+              <a href="./my_resume.html" class="navOption">Resume</a>
+            </li>
+            <li>
+              <a href="./my_fun_facts.html" class="navOption">Fun Facts</a>
+            </li>
+          </div>
+        </ul>
       </nav>
-      <h1>Joseph Caradonna - Resume</h1>
+
       <h2>
         123 Fake St • Warren, MI 48088 • josephcaradonna@outlook.com •
         586-123-4567
       </h2>
 
-      <hr>
-
+      <hr />
     </header>
 
     <!--Objective section-->
@@ -107,7 +120,7 @@
       </p>
     </div>
 
-    <hr>
+    <hr />
 
     <!--Footer with Copyright and LinkedIN link-->
     <footer>
